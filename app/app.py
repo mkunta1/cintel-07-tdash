@@ -7,7 +7,7 @@ import palmerpenguins
 
 df = palmerpenguins.load_penguins()
 
-ui.page_opts(title="Penguins dashboard", fillable=True)
+ui.page_opts(title="Penguins data Explorer", fillable=True)
 
 
 with ui.sidebar(title="Filter controls"):
@@ -85,7 +85,7 @@ with ui.layout_columns():
             )
 
     with ui.card(full_screen=True):
-        ui.card_header("Penguin da")
+        ui.card_header("Penguin Data")
 
         @render.data_frame
         def summary_statistics():
